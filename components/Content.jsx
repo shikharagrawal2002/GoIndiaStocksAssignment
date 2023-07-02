@@ -50,8 +50,8 @@ const Content = () => {
     <div className='relative bg-grey w-full flex'>
       <div className='flex xs:flex-col'>
         <div className='w-screen h-9 hidden xs:flex text-white font-extrabold'>
-          <button className='w-1/2 bg-blue' onClick={()=> handleOnClick(11)}>DISCUSSION FORUM</button>
-          <button className='w-1/2 bg-blue' onClick={()=> handleOnClick(22)}>MARKET STORIES</button>
+          <button className='w-1/2 bg-blue focus:bg-blue2 focus:border-b-2 focus:border-red' onClick={()=> handleOnClick(11)}>DISCUSSION FORUM</button>
+          <button className='w-1/2 bg-blue focus:bg-blue2 focus:border-b-2 focus:border-red' onClick={()=> handleOnClick(22)}>MARKET STORIES</button>
         </div>
         <div className='flex xs:w-full'>
           <Sidebar parentCallback={handleCallback}/>
