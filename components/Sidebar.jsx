@@ -23,6 +23,7 @@ const Sidebar = (props) => {
     "bg-light flex flex-col bg-blue2",
     {
         ["w-96"]: !toggleCollapse,
+        ["xs:w-[250px]"]:!toggleCollapse,
         ["w-0"]: toggleCollapse,
     }
     );
@@ -35,7 +36,7 @@ const Sidebar = (props) => {
   return (
     <div className="flex flex-row-reverse h-screen">
         <div className="text-white m-auto" style={{ transition: "width 2s cubic-bezier(0.2, 0, 0, 1) 0s" }}>
-            <div className="text-4xl bg-blue2 rounded-r-2xl h-32 w-10 justify-center items-center flex">
+            <div className="text-4xl bg-blue2 rounded-r-2xl h-32 xs:m-0 w-10 xs:h-24 xs:w-8 justify-center items-center flex">
                 <button className={collapseIconClasses}
                     onClick={handleSidebarToggle}>&lt;
                 </button>
@@ -45,50 +46,50 @@ const Sidebar = (props) => {
             <div className="flex items-center left-0 top-0">
                 <div className={classNames("flex flex-col w-full",{hidden: toggleCollapse})}>
                     <div className='flex justify-between items-center text-white w-full p-3'>
-                        <Image className="w-[20%]" alt="User" src={user}/>
-                        <h1 className="text-2xl w-[70%] p-5">Hello, User</h1>
-                        <Image className="w-14 p-2" alt="Bell" src={bell} />
+                        <Image className="w-[20%] xs:w-[20%]" alt="User" src={user}/>
+                        <h1 className="text-2xl w-[70%] p-5 xs:text-[18px]">Hello, User</h1>
+                        <Image className="w-14 p-2 xs:w-10" alt="Bell" src={bell} />
                     </div>
                     <hr></hr>
                     <div>
                         <div className='flex bg-darkBlue justify-between items-center text-white w-full p-1'>
                             <Image className="w-[15%]" alt="comment" src={comment}/>
-                            <h1 className="text-2xl w-[70%] p-3">Discussion Forum</h1>
+                            <h1 className="text-2xl w-[70%] p-3 xs:pl-2 xs:text-[16px]">Discussion Forum</h1>
                             <Image className="w-[20%] p-2" alt="Bell" src={arrowDown} />
                         </div>
                         <div className='flex justify-between items-center text-white w-full p-1'>
                             <Image className="w-[15%]" alt="dollar" src={dollar}/>
-                            <h1 className="text-2xl w-[70%] p-3">Market Stories</h1>
+                            <h1 className="text-2xl w-[70%] p-3 xs:pl-2 xs:text-[16px]">Market Stories</h1>
                             <Image className="w-[20%] p-2" alt="arrowDown" src={arrowDown} />
                         </div>
                         <div className='flex justify-between items-center text-white w-full p-1'>
                             <div className="w-[15%]"/>
-                            <h1 className="text-2xl w-[70%] p-3">Sentiment</h1>
+                            <h1 className="text-2xl w-[70%] p-3 xs:p-2 xs:text-[16px]">Sentiment</h1>
                             <div className="w-[20%] p-2" />
                         </div>
                         <div className='flex justify-between items-center text-white w-full p-1'>
                             <div className="w-[15%]"/>
-                            <h1 className="text-2xl w-[70%] p-3">Market</h1>
+                            <h1 className="text-2xl w-[70%] p-3 xs:p-2 xs:text-[16px]">Market</h1>
                             <div className="w-[20%] p-2" />
                         </div>
                         <div className='flex justify-between items-center text-white w-full p-1'>
                             <div className="w-[15%]"/>
-                            <h1 className="text-2xl w-[70%] p-3">Sector</h1>
+                            <h1 className="text-2xl w-[70%] p-3 xs:p-2 xs:text-[16px]">Sector</h1>
                             <div className="w-[20%] p-2" />
                         </div>
                         <div className='flex justify-between items-center text-white w-full p-1'>
                             <div className="w-[15%]"/>
-                            <h1 className="text-2xl w-[70%] p-3">Watchlist</h1>
+                            <h1 className="text-2xl w-[70%] p-3 xs:p-2 xs:text-[16px]">Watchlist</h1>
                             <div className="w-[20%] p-2" />
                         </div>
                         <div className='flex justify-between items-center text-white w-full p-1'>
                             <div className="w-[15%]"/>
-                            <h1 className="text-2xl w-[70%] p-3">Events</h1>
+                            <h1 className="text-2xl w-[70%] p-3 xs:p-2 xs:text-[16px]">Events</h1>
                             <div className="w-[20%] p-2" />
                         </div>
                         <div className='flex justify-between items-center text-white w-full p-1'>
                             <div className="w-[15%]"/>
-                            <h1 className="text-2xl w-[70%] p-3">News/Interview</h1>
+                            <h1 className="text-2xl w-[70%] p-3 xs:p-2 xs:text-[16px]">News/Interview</h1>
                             <div className="w-[20%] p-2" />
                         </div>
                     </div>

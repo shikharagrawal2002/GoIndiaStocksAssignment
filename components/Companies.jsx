@@ -2,7 +2,7 @@ import React from 'react'
 
 const Companies = () => {
   return (
-    <div className="flex animate-marquee relative left-0 w-[200%] bg-skyblue h-[65px]">
+    <div className="flex animate-marquee xs:animate-marquee2 relative left-0 w-[200%] xs:w-[600%] bg-skyblue h-[65px]">
         <ul className='flex items-center m-3 w-fit'>
             <li className='ml-7 mr-7'>
                 <img
@@ -91,7 +91,7 @@ const Companies = () => {
                 />
             </li>
         </ul>
-        <ul className='flex items-center m-3 w-fit'>
+        <ul className='flex items-center m-3 w-fit xs:hidden'>
             <li className='ml-7 mr-7'>
                 <img
                 className="h-[50px] w-[150px]"
@@ -135,7 +135,7 @@ const Companies = () => {
                 />
             </li>
         </ul>
-        <ul className='flex items-center m-3 w-fit'>
+        <ul className='flex items-center m-3 w-fit xs:hidden'>
             <li className='ml-7 mr-7'>
                 <img
                 className="h-[50px] w-[150px]"
